@@ -15,12 +15,12 @@ public class Atm {
             while(true) {
                 System.out.println("sbi bank  A.T.M");
                 System.out.println("Enter the required option you want \n");  // asking user to choose required opearation
-                System.out.println("Select option 2 for withdraw");
-                System.out.println("Select option 4 for deposit");
-                System.out.println("Select option 6 for Check balance");
-                System.out.println("Select option 8 for Transfer Amount");
-                System.out.println("Select option 10 for receipt");
-                System.out.println("Select option 12 for exit()");
+                System.out.println("Select option 1 for withdraw");
+                System.out.println("Select option 2 for deposit");
+                System.out.println("Select option 3 for Check balance");
+                System.out.println("Select option 4 for Transfer Amount");
+                System.out.println("Select option 5 for receipt");
+                System.out.println("Select option 6 for exit()");
                 int n =sc.nextInt();
                 switch (n) {
                 case 1 :
