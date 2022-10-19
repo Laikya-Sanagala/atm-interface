@@ -1,19 +1,20 @@
 import java.util.Scanner;
-public class Atm {
+public class Atm interface {
     public static void main(String[] args) {
-        int pin = 2002; 
+        int pin no = 2002; 
         int balance = 350000; 
         int withdraw=0;
         int deposit=0;
         int transferamount=0;
         int accountnumber;
-        Scanner sc =new Scanner(System.in); 
+        Scanner ob =new Scanner(System.in); 
         System.out.println("Welcome to the sbi bank \n");
         System.out.println("Please enter your A.T.M pin: "); //asking to enter the pin
-        pin =sc.nextInt();
-        if(pin == 2002 ){                
+        pin no=ob.nextInt();
+        if(pin no== 2002 ){                
             while(true) {
-                System.out.println("sbi bank  A.T.M");
+                System.out.println("your pin number is matched \n" );
+                System.out.println("welcome to sbi bank  A.T.M");
                 System.out.println("Enter the required option you want \n");  // asking user to choose required opearation
                 System.out.println("Select option 1 for withdraw");
                 System.out.println("Select option 2 for deposit");
@@ -21,11 +22,11 @@ public class Atm {
                 System.out.println("Select option 4 for Transfer Amount");
                 System.out.println("Select option 5 for receipt");
                 System.out.println("Select option 6 for exit()");
-                int n =sc.nextInt();
+                int n =ob.nextInt();
                 switch (n) {
                 case 1 :
                     System.out.println("Enter money to withdraw");
-                    withdraw=sc.nextInt();
+                    withdraw=ob.nextInt();
                     if(balance >= withdraw) {
                         balance=balance-withdraw;
                         System.out.println("Please collect your money \n");
@@ -38,7 +39,7 @@ public class Atm {
     
                 case 2 :                                                       
                     System.out.println("Enter money to be deposit");
-                    deposit=sc.nextInt();
+                    deposit=ob.nextInt();
                     balance=balance+deposit;
                     System.out.println("Your money succefully deposited ");
                     System.out.println(" ");
@@ -52,16 +53,16 @@ public class Atm {
                 case 4:                                                  
                     System.out.println("Welcome to sbi bank");
                     System.out.println("Enter your  IFSC code: ");
-                    String ifsc = sc.next();
+                    String ifsc = ob.next();
                     System.out.println("Entered IFSC code is:"+ifsc);
                     System.out.println("Enter your Bank Account Number:");
-                    accountnumber=sc.nextInt();
+                    accountnumber=ob.nextInt();
                     System.out.println("Entered Bank Account Number:"+accountnumber);
                     System.out.println("Enter the amount to be tranfer:");
-                    transferamount=sc.nextInt();
+                    transferamount=ob.nextInt();
                     System.out.println("your amount "+transferamount+" is successfully transfered to the account number"+ accountnumber);
                     balance=balance-transferamount;
-                    System.out.println("Available Balance:"+balance);   
+                    System.out.println("Available Balance in your account:"+balance);   
                     
                     break;
     
@@ -76,7 +77,7 @@ public class Atm {
                     break;
                 case 6:
                     System.out.println("sbi bank A.T.M");
-                    System.out.println("Thanks for coming...");
+                    System.out.println("***Thanks for coming...***");
                     System.out.println("Visit Again");
                     System.exit(0);
                     
@@ -85,7 +86,7 @@ public class Atm {
 
         }
         else {
-                System.out.println("Enter the correct pin and retry");
+                System.out.println("Please Enter the correct pin and retry");
                
                 
 
