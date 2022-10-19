@@ -79,7 +79,7 @@ public class Atminterface {
                     System.out.println("sbi bank A.T.M");
                     System.out.println("***Thanks for coming...***");
                     System.out.println("Visit Again");
-                    System.exit(0);
+                    System.quit(0);
                     
                 }
             }
