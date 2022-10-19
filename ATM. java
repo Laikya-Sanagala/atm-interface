@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class Atm interface {
+public class Atminterface {
     public static void main(String[] args) {
-        int pin no = 2002; 
+        int pin  = 2002; 
         int balance = 350000; 
         int withdraw=0;
         int deposit=0;
@@ -10,8 +10,8 @@ public class Atm interface {
         Scanner ob =new Scanner(System.in); 
         System.out.println("Welcome to the sbi bank \n");
         System.out.println("Please enter your A.T.M pin: "); //asking to enter the pin
-        pin no=ob.nextInt();
-        if(pin no== 2002 ){                
+        pin =ob.nextInt();
+        if(pin == 2002 ){                
             while(true) {
                 System.out.println("your pin number is matched \n" );
                 System.out.println("welcome to sbi bank  A.T.M");
